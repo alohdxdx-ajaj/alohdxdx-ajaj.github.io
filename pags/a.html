@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Mental con Información al Pasar el Ratón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .mind-map {
+            margin: 20px auto;
+            width: 800px;
+            height: 600px;
+            position: relative;
+        }
+        .node {
+            position: absolute;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .node:hover {
+            transform: scale(1.1);
+        }
+        .info {
+            display: none;
+            position: Center;
+            top: -30px;
+            left: -30px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, );
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .node:hover .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="mind-map">
+        <div class="node" style="top: 50px; left: 50px;">
+            Nodo 1
+            <div class="info">Información del Nodo 1</div>
+        </div>
+        <div class="node" style="top: 50px; left: 300px;">
+            Nodo 2
+            <div class="info">Detalles del Nodo 2</div>
+        </div>
+        <div class="node" style="top: 200px; left: 50px;">
+            Nodo 3
+            <div class="info">Contenido del Nodo 3</div>
+        </div>
+        <div class="node" style="top: 200px; left: 300px;">
+            Nodo 4
+            <div class="info">Datos del Nodo 4</div>
+        </div>
+        <div class="node" style="top: 350px; left: 50px;">
+            Nodo 5
+            <div class="info">Descripción del Nodo 5</div>
+        </div>
+        <div class="node" style="top: 350px; left: 300px;">
+            Nodo 6
+            <div class="info">Texto del Nodo 6</div>
+        </div>
+    </div>
+</body>
+</html>
